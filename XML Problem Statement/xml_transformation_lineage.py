@@ -15,17 +15,21 @@ root = tree.getroot()
 
 
 ##creating top lineage
-t1 = []
-for x in root[0][0][0][0]:
-     try:
-        t1 += [(x.attrib['NAME'] + '------->' + x.attrib['EXPRESSION'])]
-     except:
-        t1 += [(x.attrib['NAME'] + '------->' + 'None')]
-        pass
+def get_col_lineage():
+        t1 = []
+        for x in root[0][0][0][0]:  ##going to TRANSFORMFIELD tag
+                try:
+                        t1 += [(x.attrib['NAME'] + '------->' + x.attrib['EXPRESSION'])]
+                except:
+                        t1 += [(x.attrib['NAME'] + '------->' + 'None')]
+                        pass
 
-for x in root[0][0][0][1]:
-     try:
-        t1 += [(x.attrib['NAME'] + '------->' + x.attrib['EXPRESSION'])]
-     except:
-        t1 += [(x.attrib['NAME'] + '------->' + 'None')]
-        pass
+         for x in root[0][0][0][1]:
+                try:
+                        t1 += [(x.attrib['NAME'] + '------->' + x.attrib['EXPRESSION'])]
+                except:
+                        t1 += [(x.attrib['NAME'] + '------->' + 'None')]
+                        pass
+return t1
+
+get_col_lineage()
