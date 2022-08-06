@@ -8,8 +8,8 @@ Problem Statement 1 - Lineage problem statement
 
 # Description
 
-The python code is used to extract the tablenames and columns from a sql query which is provided to us a string. 
-The code is build using the regular expression module and most logic is dependent on string match and index searching to pull out the tablenames and columnnames
+The python code is used to extract the tablenames and columns from a sql query which is provided to us as a string. 
+The code is built using the regular expression module and logic is dependent on string matching and index searching to pull out the tablenames and columnnames
 
 
 
@@ -21,7 +21,7 @@ One Input parameter to be provided which is a sql query.
 
 # How to run
 
-The code can be executed with python on machine. For my purpose i've used databricks community version to spin up a python cluster which is free of cost.
+The code can be executed with python on machine. For this purpose i've used databricks community version to spin up a python cluster which is free of cost.
  
 
 # Any other points to mention
