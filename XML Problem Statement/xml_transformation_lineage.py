@@ -22,4 +22,10 @@ for x in root[0][0][0][0]:
      except:
         t1 += [(x.attrib['NAME'] + '------->' + 'None')]
         pass
-print(t1)
+
+for x in root[0][0][0][1]:
+     try:
+        t1 += [(x.attrib['NAME'] + '------->' + x.attrib['EXPRESSION'])]
+     except:
+        t1 += [(x.attrib['NAME'] + '------->' + 'None')]
+        pass
