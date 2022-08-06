@@ -58,24 +58,18 @@ Problem Statement 3 - XML problem statement
 
 # Description
 
-<Write some description for your solution>
+The python code parses XML file to get the tranformed column and its related expressions in a lineage.
 
-
+In order to work, the xml file was uploaded to git, then using python's request module I was able to fetch the raw xml data from git and save it in databricks dbfs, Once file was preset. XML was parsed with python.
  
 
 # Prerequisite
 
-<Write any prerequisites needed to run your solution>
+Python Module
 
   
-
 # How to run
 
-<Write steps to run your solution>
-
-Steps
-
-1. 
-
-2. 
+The code can be executed with python on machine. For my purpose i've used databricks community version to spin up a python cluster which is free of cost.
+ 
 
